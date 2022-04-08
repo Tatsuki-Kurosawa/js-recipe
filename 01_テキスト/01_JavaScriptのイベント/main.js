@@ -1,9 +1,13 @@
-const inputText = document.getElementById("input-text")
-const inputDate = document.getElementById("input-date")
+// const inputText = document.getElementById("input-text")
+// const inputDate = document.getElementById("input-date")
 
-const logValue = function (e) {
+// const logKey = function (e) {
+//   console.log(e.target.value)
+// }
+
+// inputText.onkeydown = logKey
+// inputDate.onkeydown = logKey
+
+document.onkeydown = function (e) {
   console.log(e)
 }
-
-inputText.oninput = logValue
-inputDate.oninput = logValue

@@ -1,15 +1,26 @@
-const FizzBuzz = function (number) {
-  for (let i = 1; i <= number; i++) {
-    if (i % 15 == 0) {
-      console.log("FizzBuzz")
-    } else if (i % 3 == 0) {
-      console.log("Fizz")
-    } else if (i % 5 == 0) {
-      console.log("Buzz")
-    } else {
-      console.log(i)
+const three = function (number) {
+  //   for (let i = 1; i <= number; i++) {
+  let a
+  let b = 0
+  let c
+  let flag = 0
+  a = number
+  while (a != 0) {
+    c = a
+    a /= 10
+    if (0 <= a && a <= 9) {
+      b = c % 10
     }
+    if (a == 3 || b == 3) {
+      console.log(`${number}!!!!!!!`)
+      flag = 1
+      break
+    }
+  }
+  if (flag == 0) {
+    console.log(number)
+    // }
   }
 }
 
-FizzBuzz(15)
+three(31)

@@ -1,6 +1,5 @@
-const figure = document.getElementById("figure")
+const figure_1 = document.getElementById("figure_1")
 
-figure.onclick = function () {
-  // figure に rounded クラスを追加する
-  figure.classList.toggle("rounded")
+figure_1.onmouseenter = function () {
+  figure_1.classList.toggle("rounded")
 }

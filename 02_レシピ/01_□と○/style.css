@@ -8,6 +8,14 @@
   border-radius: 50px;
 }
 
+.triangle {
+  width: 0px;
+  height: 0px;
+  border-right: 50px solid transparent;
+  border-bottom: 86.6025px solid green;
+  border-left: 50px solid transparent;
+}
+
 .transition {
   transition: all 1s;
 }

@@ -4,11 +4,9 @@ const button = document.getElementById("button")
 let count = 0
 
 const countUp = function () {
-  // count を更新
-  count += 1
-  //   console.log(count)
-  // count を秒単位にして表示
-  display.textContent = count / 100
+  count += 0.01
+  console.log(count)
+  display.textContent = count
 }
 
 let id = null
@@ -26,5 +24,7 @@ button.onclick = function () {
   }
 }
 
-// わずかにずれている原因
-// ストップウォッチを止める時、コンピュータが「止める」という処理をするのにわずかに時間がかかるため、ほんの少し時間にズレが生じる。
+// 謎のずれの原因
+// 10進数の0.01を2進数で表そうとすると、20桁周期の循環小数で表されるので、
+// 0.01の加算が進むたびに小さい桁での加算が行われて期待したように時間が表示されない
+// 参照：https://qiita.com/angel_p_57/items/24078ba4aa5881805ab2

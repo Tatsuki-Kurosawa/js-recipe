@@ -1,12 +1,31 @@
-const inputElement = document.getElementById("input-todo")
-const container = document.getElementById("cards-container")
-// const addButton = document.getElementById("add-button")
+const inputElement_1 = document.getElementById("input-todo-1")
+const inputElement_2 = document.getElementById("input-todo-2")
+const inputElement_3 = document.getElementById("input-todo-3")
+const container_1 = document.getElementById("cards-container-1")
+const container_2 = document.getElementById("cards-container-2")
+const container_3 = document.getElementById("cards-container-3")
 
-inputElement.onkeydown = function (enter_Key) {
-  const card = createCard(inputElement.value)
+inputElement_1.onkeydown = function (enter_Key) {
+  const card = createCard(inputElement_1.value)
   if (enter_Key.key === "Enter") {
-    container.append(card)
-    inputElement.value = ""
+    container_1.append(card)
+    inputElement_1.value = ""
+  }
+}
+
+inputElement_2.onkeydown = function (enter_Key) {
+  const card = createCard(inputElement_2.value)
+  if (enter_Key.key === "Enter") {
+    container_2.append(card)
+    inputElement_2.value = ""
+  }
+}
+
+inputElement_3.onkeydown = function (enter_Key) {
+  const card = createCard(inputElement_3.value)
+  if (enter_Key.key === "Enter") {
+    container_3.append(card)
+    inputElement_3.value = ""
   }
 }
 
@@ -28,23 +47,3 @@ const createCard = function (text) {
 
   return card
 }
-
-// addButton.onclick = function () {
-//   const text = inputElement.value
-//   const card = document.createElement("div") // <div></div> ノードを作成
-//   card.className = "card" // <div class="card"></div> クラス名追加
-//   const todo = document.createElement("div") // <div></div> ノードを作成
-//   todo.className = "todo" // <div class="todo"></div> クラス名追加
-//   todo.textContent = text // <div class="todo">text</div> 中身を記入
-//   card.append(todo)
-//   const deleteButton = document.createElement("div")
-//   deleteButton.className = "delete"
-
-//   deleteButton.onclick = function () {
-//     card.remove()
-//   }
-
-//   card.append(deleteButton)
-//   container.append(card) // 追加
-//   inputElement.value = ""
-// }

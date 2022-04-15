@@ -60,11 +60,11 @@ const button_tag = function (i) {
   choice_answer.id = "choice" + String(i)
   choice_answer.textContent = quiz.choices[i].text
   choices.appendChild(choice_answer)
-  // 要素の取得
-  choice_array[i] = document.getElementById("choice" + String(i))
 }
 
 const click_tag = function (i) {
+  // 要素の取得
+  choice_array[i] = document.getElementById("choice" + String(i))
   choice_array[i].onclick = function () {
     choose(i)
   }

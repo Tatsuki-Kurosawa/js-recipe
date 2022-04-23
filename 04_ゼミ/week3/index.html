@@ -19,6 +19,16 @@
       const sortButton = document.getElementById("sort-button")
 
       let memos = []
+      if (localStorage.memos) {
+        const memosJson = localStorage.memos
+        memos = JSON.parse(memosJson)
+        for (let i = 0; i < memos.length; i++) {
+          const div = document.createElement("div")
+          div.textContent = memos[i]
+          memoContainer.append(div)
+        }
+      }
+
       const keep = function () {
         memoContainer.textContent = ""
         for (let i = 0; i < memos.length; i++) {
@@ -30,6 +40,7 @@
 
       addButton.onclick = function () {
         memos.push(memoInput.value)
+        localStorage.memos = JSON.stringify(memos)
         keep()
       }
 

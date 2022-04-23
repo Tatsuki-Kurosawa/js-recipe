@@ -70,7 +70,8 @@
 .main-top-info {
   width: 400px;
   height: 600px;
-  background-color: aliceblue;
+  color: white;
+  background-color: white;
   margin: auto;
   /* animation: fadeIn 0.2s ease 3s 1 normal; */
 }
@@ -78,7 +79,7 @@
 .backColor {
   width: 400px;
   height: 600px;
-  background-color: blue;
+  background-color: aliceblue;
   margin: auto;
   transition: all 3s;
 }
@@ -111,12 +112,11 @@
 }
 
 .main-middle {
-  height: 1800px;
-  background-color: blanchedalmond;
+  height: 2500px;
 }
 
 .hobby {
-  padding: 150px 20px;
+  padding: 250px 20px;
 }
 
 .hobby1 {
@@ -171,4 +171,27 @@
 
 .hobby2-image img {
   height: 500px;
+}
+
+.hobby3 {
+  height: 500px;
+  margin-top: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.hobby3-content {
+  width: 700px;
+}
+
+.hobby3-content-title {
+  font-family: "M PLUS 1p";
+  font-size: 60px;
+  font-weight: bold;
+  color: maroon;
+}
+
+.hobby3-image img {
+  height: 500px;
+  margin-right: 100px;
 }

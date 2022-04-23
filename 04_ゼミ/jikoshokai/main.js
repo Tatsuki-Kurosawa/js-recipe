@@ -6,7 +6,7 @@ window.onscroll = function () {
   let windowHeight = window.innerHeight
   let value = 400
   if (scrollValue > scrollTop - windowHeight + value) {
-    mainTopInfo.classList.remove("main-top-info")
+    //   mainTopInfo.classList.remove("main-top-info")
     mainTopInfo.classList.add("backColor")
   }
 }

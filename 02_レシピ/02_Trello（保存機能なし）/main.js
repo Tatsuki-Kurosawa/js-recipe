@@ -43,7 +43,7 @@ const createCard = function (text) {
   deleteButton.onclick = function () {
     card.remove()
   }
-  card.append(deleteButton)
+  card.append(deleteButton) // ←これがないと削除ボタンが表示されない
 
   return card
 }

@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+}
+
+.header {
+  height: 800px;
+  background-image: url(./image/greephoto.jpg);
+  background-size: cover;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-top-title {
+  color: aliceblue;
+  /* margin-left: 900px; */
+}
+
+.header-top-title-sub {
+  font-family: "Montserrat Subrayada", sans-serif;
+  font-size: 80px;
+  margin: 20px;
+}
+
+.click-header {
+  height: 800px;
+  background-color: aqua;
+}
+
+/* .header-top-speed {
+  transition-timing-function: ease-in;
+}
+
+.header-top-speed:before {
+  content: "こんにちは";
+}
+
+.header-top-color {
+  background-color: blue;
+} */
+
+.main {
+  height: 800px;
+}
+
+/* .main-video {
+  height: 800px;
+  z-index: -1;
+} */
+
+/* .main-toptop {
+  margin: 50px 0;
+} */
+
+.main-top {
+  height: 600px;
+  /* margin: 60px 20px 60px 20px; */
+  margin: 250px 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-top img {
+  width: 900px;
+}
+
+.main-top-info {
+  width: 400px;
+  height: 600px;
+  background-color: aliceblue;
+  margin: auto;
+  /* animation: fadeIn 0.2s ease 3s 1 normal; */
+}
+
+.backColor {
+  width: 400px;
+  height: 600px;
+  background-color: blue;
+  margin: auto;
+  transition: all 3s;
+}
+
+.main-top-info-title {
+  padding: 30px 130px 30px 130px;
+  font-weight: bold;
+  font-size: 30px;
+  height: 100px;
+  font-family: "M PLUS 1p";
+}
+
+.main-top-info-content {
+  writing-mode: vertical-lr;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.main-top-info-content p {
+  font-family: "Hannari";
+  font-size: 25px;
+  margin: 0 30px;
+}
+
+.insert-photo-zone {
+  /* margin-top: 260px; */
+  height: 400px;
+  background-image: url(./image/yukiwakei.jpg);
+  background-size: cover;
+}
+
+.main-middle {
+  height: 1800px;
+  background-color: blanchedalmond;
+}
+
+.hobby {
+  padding: 150px 20px;
+}
+
+.hobby1 {
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.hobby1-content {
+  width: 700px;
+}
+
+.hobby1-content a {
+  display: block;
+  margin-top: 20px;
+}
+
+.hobby1-content-title {
+  font-family: "M PLUS 1p";
+  font-size: 60px;
+  font-weight: bold;
+  color: coral;
+}
+
+.hobby1-image img {
+  height: 500px;
+  margin-right: 100px;
+}
+
+.hobby2 {
+  height: 500px;
+  margin-top: 300px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.hobby2-content {
+  margin-right: 70px;
+}
+
+.hobby2-content-title {
+  font-family: "M PLUS 1p";
+  font-size: 60px;
+  font-weight: bold;
+  color: midnightblue;
+}
+
+.hobby2-image {
+  margin: 0 90px 0 50px;
+}
+
+.hobby2-image img {
+  height: 500px;
+}
